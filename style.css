@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    justify-content: space-around;
+}
+
+.btn {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tempo {
+    font-size: 35px;
+}
+
+.display-tempo {
+    margin: 0 20px;
+}
+
+.measure {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.display-beats {
+    font-size: 30px;
+}
+
+
+.btns-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.measure-change-text {
+    margin: 0 5px;
+}
+
+.play-pause-btn {
+    font-size: 50px;
+}

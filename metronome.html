@@ -2,11 +2,56 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./style.css">
         <title>Metronome</title>
     </head>
 
     <body>
+        <div class="container">
+            <div class="app">
+
+                <section class="display-tempo">
+                    <div class="decrease-btn btn">+</div>
+                    <div class="display-tempo"><span class="tempo">120</span><span class="bmp"> BPM</span></div>
+                    <div class="increase-btn btn">-</div>
+                </section>
+
+                <section class="set-tempo">
+                    <input type="range" min="35" max ="250" step="1" class="slider">
+                </section>
+
+                
+
+                <section class="measure">
+
+                    <div class="measure-change">
+                        <div class="measure-change-text">&#11024; beats &#11022;</div>
+                        <div class="btns-container">       
+                            <div class="add-beats btn">+</div>
+                            <div class="subtract-beats btn">-</div>
+                        </div> 
+                    </div>  
+
+                    <div class="display-beats">
+                        <span class="beat">4</span>
+                        <span>/</span>
+                        <span class="note">4</span>
+                    </div>
+
+                    <div class="measure-change">
+                        <div class="measure-change-text">&#11024; notes &#11022;</div>
+                        <div class="btns-container">
+                            <div class="add-notes btn">+</div>
+                            <div class="subtract-notes btn">-</div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="play-pause-btn">&#5125;</section>
+
+            </div>
+        </div>
 
         
         <script src="./app.js" type="module"></script>
