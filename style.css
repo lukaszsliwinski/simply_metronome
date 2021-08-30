@@ -65,6 +65,15 @@ section {
     margin: 0 5px;
 }
 
-.play-pause-btn {
+.play-pause {
     font-size: 50px;
+    height: 70px;
+}
+
+.pause-btn {
+    font-size: 25px;
+}
+
+.hide {
+    display: none;
 }
