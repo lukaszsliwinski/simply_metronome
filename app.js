@@ -1,5 +1,8 @@
 const tempoDescription = document.querySelector('.tempo-description');
 const tempoSlider = document.querySelector('.tempo-slider');
+const tempoDisplay = document.querySelector('.tempo');
+const decreaseBtn = document.querySelector('.decrease-btn');
+const increaseBtn = document.querySelector('.increase-btn');
 
 const tempoDescriptionsArray = [[19, 40, "Grave"],
                                 [40, 45, "Lento"],
@@ -18,7 +21,16 @@ const tempoDescriptionsArray = [[19, 40, "Grave"],
 let bpm = 120;
 let tempoDescriptionString = "Allegro";
 
-
+decreaseBtn.addEventListener('click', () => {
+    bpm--;
+    validateTempo()
+    updateMetronome()
+});
+increaseBtn.addEventListener('click', () => {
+    bpm++;
+    validateTempo()
+    updateMetronome()
+});
 
 tempoSlider.addEventListener('input', () => {
     bpm = tempoSlider.value;
@@ -28,6 +40,7 @@ tempoSlider.addEventListener('input', () => {
 
 
 function updateMetronome() {
+    tempoDisplay.textContent = bpm;
     for (let i = 0; i < tempoDescriptionsArray.length; i++) {
         if (bpm > tempoDescriptionsArray[i][0] && bpm < tempoDescriptionsArray[i][1]) {
             tempoDescriptionString = tempoDescriptionsArray[i][2]}
@@ -36,6 +49,6 @@ function updateMetronome() {
 }
 
 function validateTempo() {
-    if (bpm <= 20) { return }
-    if (bpm >= 250) { return }
+    if (bpm <= 20) { bpm = 20 };
+    if (bpm >= 250) { bpm = 250 };
 }
