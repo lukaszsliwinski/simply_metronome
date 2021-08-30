@@ -1,8 +1,14 @@
+const tempoDisplay = document.querySelector('.tempo');
 const tempoDescription = document.querySelector('.tempo-description');
 const tempoSlider = document.querySelector('.tempo-slider');
-const tempoDisplay = document.querySelector('.tempo');
 const decreaseBtn = document.querySelector('.decrease-btn');
 const increaseBtn = document.querySelector('.increase-btn');
+const subtractBeats = document.querySelector('.subtract-beats');
+const addBeats = document.querySelector('.add-beats');
+const subtractNotes = document.querySelector('.subtract-notes');
+const addNotes = document.querySelector('.add-notes');
+const beatsValue = document.querySelector('.beat');
+const notesValue = document.querySelector('.note');
 
 const tempoDescriptionsArray = [[19, 40, "Grave"],
                                 [40, 45, "Lento"],
@@ -20,6 +26,8 @@ const tempoDescriptionsArray = [[19, 40, "Grave"],
 
 let bpm = 120;
 let tempoDescriptionString = "Allegro";
+let beats = 4;
+let notes = 4;
 
 decreaseBtn.addEventListener('click', () => {
     bpm--;
@@ -36,6 +44,30 @@ tempoSlider.addEventListener('input', () => {
     bpm = tempoSlider.value;
     validateTempo()
     updateMetronome()
+});
+
+subtractBeats.addEventListener('click', () => {
+    if (beats <= 1) { return }
+    beats--;
+    beatsValue.textContent = beats;
+});
+
+addBeats.addEventListener('click', () => {
+    if (beats >= 12) { return }
+    beats++;
+    beatsValue.textContent = beats;
+});
+
+subtractNotes.addEventListener('click', () => {
+    if (notes <= 1) { return }
+    notes /= 2;
+    notesValue.textContent = notes;
+});
+
+addNotes.addEventListener('click', () => {
+    if (notes >= 64) { return }
+    notes *= 2;
+    notesValue.textContent = notes;
 });
 
 
