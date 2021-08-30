@@ -1,6 +1,19 @@
 const tempoDescription = document.querySelector('.tempo-description');
 const tempoSlider = document.querySelector('.tempo-slider');
 
+const tempoDescriptionsArray = [[19, 40, "Grave"],
+                                [40, 45, "Lento"],
+                                [45, 55, "Largo"],
+                                [55, 65, "Adagio"],
+                                [65, 73, "Adagietto"],
+                                [73, 86, "Andante"],
+                                [86, 98, "Moderato"],
+                                [98, 109, "Allegretto"],
+                                [109, 132, "Allegro"],
+                                [132, 168, "Vivace"],
+                                [168, 178, "Presto"],
+                                [178, 250, "Prestissimo"],
+                                ];
 
 let bpm = 120;
 let tempoDescriptionString = "Allegro";
@@ -15,19 +28,10 @@ tempoSlider.addEventListener('input', () => {
 
 
 function updateMetronome() {
-    if (bpm <= 40) { tempoDescriptionString = "Grave" };
-    if (bpm > 40 && bpm < 45) { tempoDescriptionString = "Lento" };
-    if (bpm > 45 && bpm < 55) { tempoDescriptionString = "Largo" };
-    if (bpm > 55 && bpm < 65) { tempoDescriptionString = "Adagio" };
-    if (bpm > 65 && bpm < 73) { tempoDescriptionString = "Adagietto" };
-    if (bpm > 73 && bpm < 86) { tempoDescriptionString = "Andante" };
-    if (bpm > 86 && bpm < 98) { tempoDescriptionString = "Moderato" };
-    if (bpm > 98 && bpm < 109) { tempoDescriptionString = "Allegretto" };
-    if (bpm > 109 && bpm < 132) { tempoDescriptionString = "Allegro" };
-    if (bpm > 132 && bpm < 168) { tempoDescriptionString = "Vivace" };
-    if (bpm > 168 && bpm < 178) { tempoDescriptionString = "Presto" };
-    if (bpm > 178 && bpm < 280) { tempoDescriptionString = "Prestissimo" };
-
+    for (let i = 0; i < tempoDescriptionsArray.length; i++) {
+        if (bpm > tempoDescriptionsArray[i][0] && bpm < tempoDescriptionsArray[i][1]) {
+            tempoDescriptionString = tempoDescriptionsArray[i][2]}
+        }
     tempoDescription.textContent = tempoDescriptionString;
 }
 
