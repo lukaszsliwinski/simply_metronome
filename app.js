@@ -74,13 +74,15 @@ subtractNotes.addEventListener('click', () => {
     if (notes <= 1) { return }
     notes /= 2;
     notesValue.textContent = notes;
+    updateMetronome()
     count = 0;
 });
 
 addNotes.addEventListener('click', () => {
-    if (notes >= 64) { return }
+    if (notes >= 16) { return }
     notes *= 2;
     notesValue.textContent = notes;
+    updateMetronome()
     count = 0;
 });
 
@@ -102,7 +104,7 @@ playPause.addEventListener('click', () => {
 
 function updateMetronome() {
     tempoDisplay.textContent = bpm;
-    metronome.timeInterval = 60000 / bpm;
+    metronome.timeInterval = 240000 / bpm / notes;
     for (let i = 0; i < tempoDescriptionsArray.length; i++) {
         if (bpm > tempoDescriptionsArray[i][0] && bpm < tempoDescriptionsArray[i][1]) {
             tempoDescriptionString = tempoDescriptionsArray[i][2]}
@@ -130,4 +132,4 @@ function playClick() {
 }
 
 
-const metronome = new Timer(playClick, 60000 / bpm, { immediate: true });
+const metronome = new Timer(playClick, 240000 / bpm / notes, { immediate: true });
