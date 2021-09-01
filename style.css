@@ -4,6 +4,13 @@ font-family: 'IBM Plex Mono', monospace;
 font-family: 'VT323', monospace;
 */
 
+:root {
+    --grey1: rgb(56, 56, 56);
+    --grey2: rgb(34, 34, 34);
+    --grey3: rgb(51, 51, 51);
+    --grey4: rgb(29, 29, 29);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -29,23 +36,52 @@ body {
     width: 400px;
     height: 250px;
     justify-content: space-around;
-    background: radial-gradient(rgb(34, 34, 34), rgb(27, 27, 27) 50%)
+    background: var(--grey2);
 }
 
-.btn {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: 1px solid black;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-}
+
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    /* background-color: rgb(95, 77, 77); */
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 19px;
+    cursor: pointer;
+    background: linear-gradient(45deg, var(--grey2), var(--grey1));
+    /* background-color: black; */
+}
+
+.btn:hover {
+    color: red;
+    
+}
+
+.btn:active {
+    background: linear-gradient(45deg, var(--grey4), var(--grey3));
+
+}
+
+.decrease-btn, .increase-btn {
+    width: 45px;
+    height: 45px;
+    line-height: 35px;
+    font-size: 20px;
+
+}
+
+.subtract-beats, .add-beats, .subtract-notes, .add-notes {
+    width: 25px;
+    height: 25px;
 }
 
 .tempo {
@@ -89,7 +125,7 @@ section {
 }
 
 .measure-change-text {
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 
