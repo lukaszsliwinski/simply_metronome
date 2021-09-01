@@ -69,6 +69,7 @@ section {
 .btn:active {
     background: linear-gradient(45deg, var(--grey4), var(--grey3));
 
+
 }
 
 .decrease-btn, .increase-btn {
@@ -130,22 +131,17 @@ section {
 
 
 
-.pause-btn, .play-btn {
-    font-size: 50px;
-    width: 50px;
-    height: 50px;
-    border: 1px white solid;
-    border-radius: 30%;
-    cursor: pointer;
-    padding-left: 10px;
-    padding-bottom: 30px;
-    box-sizing: border-box;
+.play-btn {
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 67px;
+    padding-left: 2px;
 }
 
-.pause-btn {
-    font-size: 25px;
-}
 
-.hide {
-    display: none;
+
+.is-playing {
+    color: red;
 }

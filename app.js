@@ -11,9 +11,7 @@ const subtractNotes = document.querySelector('.subtract-notes');
 const addNotes = document.querySelector('.add-notes');
 const beatsValue = document.querySelector('.beat');
 const notesValue = document.querySelector('.note');
-const playPause = document.querySelector('.play-pause');
 const playBtn = document.querySelector('.play-btn');
-const pauseBtn = document.querySelector('.pause-btn');
 
 const click1 = new Audio('click1.mp3');
 const click2 = new Audio('click2.mp3');
@@ -86,18 +84,16 @@ addNotes.addEventListener('click', () => {
     count = 0;
 });
 
-playPause.addEventListener('click', () => {
+playBtn.addEventListener('click', () => {
     count = 0;
     if (!isRunning) {
         metronome.start();
         isRunning = true;
-        playBtn.classList.add('hide');
-        pauseBtn.classList.remove('hide');
+        playBtn.classList.add('is-playing');
     } else {
         metronome.stop();
         isRunning = false;
-        playBtn.classList.remove('hide');
-        pauseBtn.classList.add('hide');
+        playBtn.classList.remove('is-playing');
     }
 })
 
