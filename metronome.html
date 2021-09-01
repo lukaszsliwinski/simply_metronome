@@ -12,18 +12,27 @@
 
                 <section class="current-tempo">
                     <div class="decrease-btn btn">-</div>
-                    <div class="display-tempo"><span class="tempo">120</span><span class="bmp"> BPM</span></div>
+                    <div class="display">
+                        <div class="tempo">
+                            <span class="tempo-value">120</span><span class="bpm"> BPM</span>
+                        </div>
+                        <div class="display-bottom">
+                            <div class="tempo-description">Allegro</div>
+                            <div class="display-beats">
+                                <span class="beat">4</span><span>/</span><span class="note">4</span>
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="increase-btn btn">+</div>
                 </section>
 
-                <section>
-                    <div class="tempo-description">Allegro</div>
-                </section>
+                
 
                 <section class="set-tempo">
                     <input type="range" min="20" max ="250" value="120" step="1" class="tempo-slider">
                 </section>
-               
+              
 
                 <section class="measure">
 
@@ -35,9 +44,9 @@
                         </div> 
                     </div>  
 
-                    <div class="display-beats">
-                        <span class="beat">4</span><span>/</span><span class="note">4</span>
-                    </div>
+                    
+
+                    <div class="play-btn btn">&#5125;</div>
 
                     <div class="measure-change">
                         <div class="measure-change-text">&#11024;notes&#11022;</div>
@@ -50,7 +59,7 @@
                 </section>
 
                 <section class="play">
-                    <div class="play-btn btn">&#5125;</div>
+                    
                 </section>
                 
                 <!-- <section class="play-pause">

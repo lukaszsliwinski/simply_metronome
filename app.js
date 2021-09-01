@@ -1,6 +1,6 @@
 import Timer from './times.js';
 
-const tempoDisplay = document.querySelector('.tempo');
+const tempoDisplay = document.querySelector('.tempo-value');
 const tempoDescription = document.querySelector('.tempo-description');
 const tempoSlider = document.querySelector('.tempo-slider');
 const decreaseBtn = document.querySelector('.decrease-btn');
