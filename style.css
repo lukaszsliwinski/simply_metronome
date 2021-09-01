@@ -89,6 +89,16 @@ section {
     font-size: 35px;
 }
 
+.tempo-description {
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px 20px;
+    background-color: black;
+    color: red;
+    font-family: 'VT323', monospace;
+    width: 70px;
+}
+
 .display-tempo {
     display: inline-flex;
     justify-content: center;
@@ -127,6 +137,7 @@ section {
 
 .measure-change-text {
     margin: 0 10px;
+    
 }
 
 
