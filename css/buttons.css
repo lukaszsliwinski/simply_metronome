@@ -4,6 +4,8 @@
     border: 2px solid black;
     border-radius: 10%;
     box-sizing: border-box;
+    width: 25px;
+    height: 25px;
     background: linear-gradient(45deg, var(--grey2), var(--grey1));
     cursor: pointer;
     line-height: 19px;
@@ -25,14 +27,6 @@
     height: 50px;
     font-size: 20px;
     line-height: 42px;
-}
-
-.subtract-beats-btn,
-.add-beats-btn,
-.subtract-notes-btn,
-.add-notes-btn {
-    width: 25px;
-    height: 25px;
 }
 
 .play-btn {

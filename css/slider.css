@@ -10,7 +10,7 @@ input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
-input[type=range]:focus {   /* sprawdzić na nagraniu co to robi i usunąć jeśli niepotrzebne */
+input[type=range]:focus {
     outline: none;
 }
 
@@ -43,7 +43,7 @@ input[type=range]::-webkit-slider-runnable-track {
     background: black;
 }
 
-input[type=range]::-moz-range-trackbeats-per-measure-text {
+input[type=range]::-moz-range-track {
     height: 2px;
     background: black;
 }
