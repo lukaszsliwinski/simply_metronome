@@ -1,0 +1,49 @@
+/* slider style */
+input[type=range] {
+    -webkit-appearance: none;
+
+    width: 60%;
+    background-color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {   /* sprawdzić na nagraniu co to robi i usunąć jeśli niepotrzebne */
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(45deg, var(--grey2), var(--grey1));
+    cursor: pointer;
+
+    margin-top: -11.5px;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(45deg, var(--grey2), var(--grey1));
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 2px;
+    background: black;
+}
+
+input[type=range]::-moz-range-trackbeats-per-measure-text {
+    height: 2px;
+    background: black;
+}

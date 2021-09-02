@@ -2,74 +2,65 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/display.css">
+        <link rel="stylesheet" type="text/css" href="./css/slider.css">
+        <link rel="stylesheet" type="text/css" href="./css/buttons.css">
         <title>Metronome</title>
     </head>
-
     <body>
         <div class="container">
             <div class="app">
 
-                <section class="current-tempo">
-                    <div class="decrease-btn btn">-</div>
+                <!-- Main area with display and increase/decrease tempo buttons -->
+                <section class="main-area">
+                    <div class="decrease-tempo-btn btn">-</div>
+
                     <div class="display">
-                        <div class="tempo">
-                            <span class="tempo-value">120</span><span class="bpm"> BPM</span>
+                        <div class="display-tempo">
+                            <span class="tempo-value">135</span><span class="bpm"> BPM</span>
                         </div>
                         <div class="display-bottom">
-                            <div class="tempo-description">Allegro</div>
-                            <div class="display-beats">
-                                <span class="beat">4</span><span>/</span><span class="note">4</span>
+                            <div class="tempo-description">Vivace</div>
+                            <div class="display-measure">
+                                <span class="display-beats">4</span><span>/</span><span class="display-notes">4</span>
                             </div>
                         </div>
-
                     </div>
-                    <div class="increase-btn btn">+</div>
+
+                    <div class="increase-tempo-btn btn">+</div>
                 </section>
 
-                
 
+                <!-- Change tempo slider -->
                 <section class="set-tempo">
-                    <input type="range" min="20" max ="250" value="120" step="1" class="tempo-slider">
+                    <input type="range" min="20" max ="250" value="135" step="1" class="tempo-slider">
                 </section>
-              
 
-                <section class="measure">
-
-                    <div class="measure-change">
-                        <div class="measure-change-text">&#11024;beats&#11022;</div>
+                <!-- Change measure buttons and play button -->
+                <nav class="controls">
+                    <div class="change-measure">
+                        <div class="change-measure-label">&#11024;beats&#11022;</div>
                         <div class="btns-container">
-                            <div class="subtract-beats btn">-</div>       
-                            <div class="add-beats btn">+</div>
+                            <div class="subtract-beats-btn btn">-</div>       
+                            <div class="add-beats-btn btn">+</div>
                         </div> 
-                    </div>  
-
-                    
+                    </div>
 
                     <div class="play-btn btn">&#5125;</div>
 
-                    <div class="measure-change">
-                        <div class="measure-change-text">&#11024;notes&#11022;</div>
+                    <div class="change-measure">
+                        <div class="change-measure-label">&#11024;notes&#11022;</div>
                         <div class="btns-container">
-                            <div class="subtract-notes btn">-</div>
-                            <div class="add-notes btn">+</div>
+                            <div class="subtract-notes-btn btn">-</div>
+                            <div class="add-notes-btn btn">+</div>
                         </div>
                     </div>
-
-                </section>
-
-                <section class="play">
-                    
-                </section>
-                
-                <!-- <section class="play-pause">
-                    <div class="play-btn">&#5125;</div>
-                </section> -->
+                </nav>
 
             </div>
         </div>
-
-        
-        <script src="./app.js" type="module"></script>
+        <script type="module" src="./js/app.js"></script>
     </body>
 </html>

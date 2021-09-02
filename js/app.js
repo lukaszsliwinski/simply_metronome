@@ -3,18 +3,18 @@ import Timer from './times.js';
 const tempoDisplay = document.querySelector('.tempo-value');
 const tempoDescription = document.querySelector('.tempo-description');
 const tempoSlider = document.querySelector('.tempo-slider');
-const decreaseBtn = document.querySelector('.decrease-btn');
-const increaseBtn = document.querySelector('.increase-btn');
-const subtractBeats = document.querySelector('.subtract-beats');
-const addBeats = document.querySelector('.add-beats');
-const subtractNotes = document.querySelector('.subtract-notes');
-const addNotes = document.querySelector('.add-notes');
-const beatsValue = document.querySelector('.beat');
-const notesValue = document.querySelector('.note');
+const decreaseBtn = document.querySelector('.decrease-tempo-btn');
+const increaseBtn = document.querySelector('.increase-tempo-btn');
+const subtractBeats = document.querySelector('.subtract-beats-btn');
+const addBeats = document.querySelector('.add-beats-btn');
+const subtractNotes = document.querySelector('.subtract-notes-btn');
+const addNotes = document.querySelector('.add-notes-btn');
+const beatsValue = document.querySelector('.display-beats');
+const notesValue = document.querySelector('.display-notes');
 const playBtn = document.querySelector('.play-btn');
 
-const click1 = new Audio('click1.mp3');
-const click2 = new Audio('click2.mp3');
+const click1 = new Audio('/media/click1.mp3');
+const click2 = new Audio('/media/click2.mp3');
 
 const tempoDescriptionsArray = [[19, 40, "Grave"],
                                 [40, 45, "Lento"],

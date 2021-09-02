@@ -1,0 +1,44 @@
+/* display components style */
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20px;
+    border-radius: 2.5%;
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    font-family: 'VT323', monospace;
+    color: red;
+}
+
+.display-tempo {
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.bpm {
+    font-size: 20px;
+}
+
+.display-bottom {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 90%;
+}
+
+.tempo-description {
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.display-measure {
+    display: inline-block;
+    background-color: black;
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+    color: red;
+}

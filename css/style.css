@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=VT323&display=swap');
+/* 
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'VT323', monospace;
+*/
+
+
+/* used colors */
+:root {
+    --grey1: rgb(56, 56, 56);     /* for buttons */
+    --grey2: rgb(34, 34, 34);     /* for buttons and background */
+    --grey3: rgb(51, 51, 51);     /* for buttons:active */
+    --grey4: rgb(29, 29, 29);     /* for buttons:active */
+}
+
+
+/* tags style */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    user-select: none;
+}
+
+section,
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* other elements style */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 1%;
+    width: 450px;
+    height: 250px;
+    background: var(--grey2);
+}
+
+.controls {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.change-measure-label {
+    margin: 0 10px;
+}
+
+.btns-container {
+    display: flex;
+    justify-content: space-between;
+}

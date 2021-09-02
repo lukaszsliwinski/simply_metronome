@@ -1,0 +1,49 @@
+/* buttons style */
+.btn {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10%;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, var(--grey2), var(--grey1));
+    cursor: pointer;
+    line-height: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    color: red;
+}
+
+.btn:active {
+    background: linear-gradient(45deg, var(--grey4), var(--grey3));
+}
+
+.decrease-tempo-btn,
+.increase-tempo-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 42px;
+}
+
+.subtract-beats-btn,
+.add-beats-btn,
+.subtract-notes-btn,
+.add-notes-btn {
+    width: 25px;
+    height: 25px;
+}
+
+.play-btn {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding-left: 2px;
+    font-size: 20px;
+    line-height: 67px;
+}
+
+.is-playing {
+    color: red;
+}
