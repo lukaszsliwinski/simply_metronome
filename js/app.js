@@ -37,6 +37,7 @@ let notes = 4;
 let count = 0;
 let isRunning = false;
 
+// change tempo value
 decreaseBtn.addEventListener('click', () => {
     bpm--;
     validateTempo()
@@ -54,6 +55,8 @@ tempoSlider.addEventListener('input', () => {
     updateMetronome()
 });
 
+
+// change measure - beats
 subtractBeats.addEventListener('click', () => {
     if (beats <= 1) { return }
     beats--;
@@ -68,6 +71,8 @@ addBeats.addEventListener('click', () => {
     count = 0;
 });
 
+
+// change measure - notes
 subtractNotes.addEventListener('click', () => {
     if (notes <= 1) { return }
     notes /= 2;
@@ -84,6 +89,8 @@ addNotes.addEventListener('click', () => {
     count = 0;
 });
 
+
+// play button
 playBtn.addEventListener('click', () => {
     count = 0;
     if (!isRunning) {
@@ -126,6 +133,5 @@ function playClick() {
     }
     count++;
 }
-
 
 const metronome = new Timer(playClick, 240000 / bpm / notes, { immediate: true });
