@@ -1,4 +1,5 @@
 // Add accurate timer constructor function
+// Code is token from yt tutorial - https://www.youtube.com/watch?v=x8PBWobv6NY
 
 function Timer(callback, timeInterval, options) {
     this.timeInterval = timeInterval;

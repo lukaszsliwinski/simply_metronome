@@ -1,7 +1,7 @@
 # Simply metronome
 
 ## About
-Simply metronome web application using html, css and javascript. In the app you can set different meters and tempos. This is my first javascript app made for learning and gain experience in web development.
+Simply metronome web application using html, css and javascript. In the app you can set different meters and tempos. This is my first javascript app made for learning and gain experience in web development. The app uses timer from youtube tutorial - https://www.youtube.com/watch?v=x8PBWobv6NY
 
 ## Used technologies
 HTML5<br>
