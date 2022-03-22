@@ -5,9 +5,13 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 20px;
-    border-radius: 2.5%;
+    box-shadow: 
+        -2px 2px 3px 1px rgba(255, 255, 255, 0.06) inset,
+        2px -2px 3px 1px rgba(255, 255, 255, 0.17) inset;
+    border-radius: 10px;
     width: 200px;
     height: 100px;
+    padding: 5px;
     background-color: black;
     font-family: 'VT323', monospace;
     color: red;

@@ -16,6 +16,7 @@ font-family: 'VT323', monospace;
 
 /* tags style */
 body {
+    background: black;
     font-family: 'IBM Plex Mono', monospace;
     color: white;
     user-select: none;
@@ -28,12 +29,23 @@ nav {
     align-items: flex-start;
 }
 
+.background-img {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30vw;
+    min-width: 250px;
+    height: 100vh;
+    background: url(../media/background.png) no-repeat right bottom;
+    background-size: 100%;
+}
 
 /* other elements style */
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
 }
 
@@ -41,10 +53,14 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-radius: 1%;
+    margin-top: 15vh;
+    box-shadow: 
+        -12px 12px 16px -4px rgba(190, 190, 190, 0.1) inset,
+        8px -8px 12px -4px rgba(0, 0, 0, .4) inset;
+    border-radius: 15px;
     width: 450px;
     height: 250px;
-    background: var(--grey2);
+    background: linear-gradient(60deg, var(--grey2) 0%, var(--grey1) 100%);
 }
 
 .controls {
@@ -53,7 +69,7 @@ nav {
 }
 
 .change-measure-label {
-    margin: 0 10px;
+    margin: 0 10px 5px;
 }
 
 .btns-container {
