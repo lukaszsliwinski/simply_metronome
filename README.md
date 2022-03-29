@@ -4,27 +4,28 @@
 Simply metronome web application using html, css and javascript. In the app you can set different meters and tempos. This is my first javascript app made for learning and gain experience in web development. The app uses timer from youtube tutorial - https://www.youtube.com/watch?v=x8PBWobv6NY
 
 ## Used technologies
+Javascript<br>
+Node.js 16<br>
 HTML5<br>
-CSS3<br>
-Javascript
+CSS3
 
 ## Setup and run (Windows)
 1 Install node.js from website:<br>
 &emsp;https://nodejs.org/en/download<br><br>
-2 Install http-server package
-```bash
-npm install -g http-server
-```
-3 Download repository
+2 Download repository
 ```bash
 git clone https://github.com/lukaszsliwinski/simply_metronome
 ```
-4 Go into main directory
+3 Go into main directory
 ```bash
 cd simply_metronome
 ```
-5 Run app on localhost - in main directory run:
+4 Install required packages
 ```bash
-http-server
+npm install
 ```
-6 Run http://127.0.0.1:8080/metronome.html in browser
+5 Run application on localhost
+```bash
+node app.js
+```
+6 Enter 'localhost:3000' in browser to run the app

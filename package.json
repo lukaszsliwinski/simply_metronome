@@ -1,0 +1,23 @@
+{
+  "name": "simply_metronome",
+  "version": "1.0.0",
+  "description": "Simply metronome web application using html, css and javascript. In the app you can set different meters and tempos. This is my first javascript app made for learning and gain experience in web development. The app uses timer from youtube tutorial - https://www.youtube.com/watch?v=x8PBWobv6NY",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukaszsliwinski/simply_metronome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukaszsliwinski/simply_metronome/issues"
+  },
+  "homepage": "https://github.com/lukaszsliwinski/simply_metronome#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
