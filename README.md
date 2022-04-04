@@ -3,13 +3,16 @@
 ## About
 Simply metronome web application using Node.js, html, css and javascript. In the app you can set different meters and tempos. This is my first javascript app made for learning and gain experience in web development. Ater learning the basics od Node.js, I added Node to project. The app uses timer from youtube tutorial - https://www.youtube.com/watch?v=x8PBWobv6NY
 
+## Demo
+https://simplymetronome.herokuapp.com/
+
 ## Used technologies
 Javascript<br>
 Node.js 16<br>
 HTML5<br>
 CSS3
 
-## Setup and run (Windows)
+## Setup and run on localhost (Windows)
 1 Install node.js from website:<br>
 &emsp;https://nodejs.org/en/download<br><br>
 2 Download repository
