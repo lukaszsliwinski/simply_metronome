@@ -8,7 +8,8 @@ https://simplymetronome.herokuapp.com/
 
 ## Used technologies
 Javascript<br>
-Node.js 16<br>
+Node.js<br>
+Express<br>
 HTML5<br>
 CSS3
 
