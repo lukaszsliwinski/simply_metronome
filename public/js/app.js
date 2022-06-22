@@ -17,7 +17,7 @@ const tempoDescriptionsArray = [[19, 40, "Grave"],
                                 [178, 250, "Prestissimo"],
                                 ];
 
-let bpm = 120;
+let bpm = 135;
 let tempoDescriptionString = "Allegro";
 let beats = 4;
 let notes = 4;
@@ -92,6 +92,7 @@ $('.play-btn').on('click', () => {
 
 function updateMetronome() {
     $('.tempo-value').text(bpm);
+    $('.tempo-slider').val(bpm);
     metronome.timeInterval = 240000 / bpm / notes;
     for (let i = 0; i < tempoDescriptionsArray.length; i++) {
         if (bpm > tempoDescriptionsArray[i][0] && bpm < tempoDescriptionsArray[i][1]) {
