@@ -10,6 +10,7 @@ https://simplymetronome.herokuapp.com/
 Javascript<br>
 Node.js<br>
 Express<br>
+JQuery<br>
 HTML5<br>
 CSS3
 
